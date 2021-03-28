@@ -10,7 +10,9 @@ Low-Shot Learning With Imprinted Weights </a> with contributions on CIFAR100.
 - Adaptative code for CIFAR100 and other datasets
 
 ## Explanations
-Code has been made for CIFAR100, but other Data can be used easily. YAML config will ensure reproducibility of the resuts. **main.py** will provide both imprinted model and imprinted+finetuned model for a class chosen in the config file. Note that all the code is built on several iterations over number of shots and chosen classes for imprinting to get statistically relevant performances. Indeed, performances depend on two main factors:
+Code has been made for CIFAR100, but other Data can be used easily. YAML config will ensure reproducibility of the resuts. **main.py** will provide both imprinted model and imprinted+finetuned model for a class chosen in the config file. Project has been motivated by Fine Tuning inneficiency in cases where Imprinted class is not discrimant and Fine Tuning does not necessarily improve performance or even degrade them as the model was overfitting on initial classes that are preponderant in the learning phase. Adapative loss and training implemented here, helped a lot to tackle this issue.
+
+Note that all the code is built on several iterations over number of shots and chosen classes for imprinting to get statistically relevant performances. Indeed, performances depend on two main factors:
 - The class chosen for imprinting weights. The more the class is discrimant compared to the initial class learnt my the model, the more imprinting and fine-tuning will be efficient.
 - The instance(s) of the Low-Shot class. Some instances of the dataset present more salliant points and will improve model's performances.
 
