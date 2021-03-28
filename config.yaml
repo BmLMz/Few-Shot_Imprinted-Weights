@@ -1,0 +1,27 @@
+CreateNets: false
+Finetune: true
+PATH: ./Net/cifar_basenet_40.pth
+PATH_FULL: ./Net/cifar_full_40.pth
+batch_size: 20
+embedding_size: 256
+fs_class: 80
+fs_classes:
+- 51
+- 72
+- 92
+- 71
+- 60
+- 80
+- 79
+- 91
+- 50
+- 88
+iteration: 4
+num_classes: 40
+num_epochs: 15
+number_shots:
+- 1
+- 5
+- 10
+- 20
+random: false
