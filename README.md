@@ -1,4 +1,4 @@
-# Low shot learning with imprinted weights and fine tuning improvments (on CIFAR100)
+# Low shot learning with imprinted weights and fine tuning improvments (on CIFAR100 + PyTorch)
 ## Achieving 80% accuracy on Imprinted (Low-Shot) class with 5 shots or more on CIFAR100
 Implementation of <a href = 'https://openaccess.thecvf.com/content_cvpr_2018/papers/Qi_Low-Shot_Learning_With_CVPR_2018_paper.pdf'> 
 Low-Shot Learning With Imprinted Weights </a> with contributions on CIFAR100.
